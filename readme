@@ -1,0 +1,58 @@
+# CLI Mini-Game Suite & Entertainment Utility
+
+A lightweight, modular, terminal-based entertainment and algorithmic puzzle suite written in Python 3. Featuring probability simulators, state-driven score tracking, the classic deductive logic game *Bulls and Cows*, and live programming jokes delivered via `pyjokes`.
+
+---
+
+## 📌 Project Overview
+The **CLI Mini-Game Suite** provides quick, distraction-free games directly inside the terminal without launching bulky graphical user interfaces or web browsers. The project showcases core computer science fundamentals:
+* Randomization & state machines
+* Input sanitization & defensive validation pipelines
+* Set theory & combinatorial matching algorithms
+* Modular procedural architecture
+
+---
+
+## ✨ Features
+
+- **🎮 Rock, Paper, Scissors (`rps`)**:
+  - Classic zero-sum gameplay vs. computer.
+  - Multi-round tracking with dynamic scoreboard.
+  - Graceful exit via `'quit'` keyword.
+
+- **🪙 Coin Toss Simulator (`toss`)**:
+  - Binary outcome prediction engine.
+  - Case-insensitive input normalization.
+  - Live session score counter.
+
+- **🐂 Bulls and Cows (`bulls_cows`)**:
+  - 4-digit unique number guessing game using non-replacement random sampling (`random.sample`).
+  - Positional match calculation:
+    - **Bull**: Correct digit in the exact position.
+    - **Cow**: Correct digit in the wrong position.
+  - Strict input validation (ensures exactly 4 digits, all unique, numeric only).
+
+- **😄 Programmer Joke Generator (`joke`)**:
+  - Quick terminal developer jokes using the `pyjokes` package.
+
+- **🧭 Centralized Menu Controller (`main_menu`)**:
+  - Persistent interactive loop with error handling for out-of-range choices.
+
+---
+
+## 🛠️ Technologies & Tools Used
+
+- **Language:** Python 3.8+
+- **Standard Library:**
+  - `random`: Pseudo-random selection (`random.choice`) and non-repeating sampling (`random.sample`).
+- **External Dependencies:**
+  - `pyjokes`: Python package for fetching programming jokes.
+
+---
+
+## 🚀 Installation & Running Instructions
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/](https://github.com/)<your-username>/cli-minigame-suite.git
+cd cli-minigame-suite
